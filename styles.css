@@ -2274,3 +2274,244 @@ kbd {
     display: none;
   }
 }
+/* ===== ANIMATED PROFILE ORB ===== */
+
+.photo-wrap.animated-profile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  background: transparent;
+}
+
+.animated-profile .profile-core {
+  position: relative;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      rgba(170, 120, 255, 0.45),
+      transparent 35%
+    ),
+    radial-gradient(circle, #24134f 0%, #0d0920 55%, #05040b 100%);
+
+  border: 2px solid rgba(170, 110, 255, 0.8);
+
+  box-shadow:
+    0 0 20px rgba(137, 72, 255, 0.8),
+    0 0 50px rgba(115, 55, 255, 0.5),
+    inset 0 0 35px rgba(150, 80, 255, 0.3);
+
+  animation: profileFloat 4s ease-in-out infinite;
+}
+
+.animated-profile .profile-core span {
+  font-size: 68px;
+  font-weight: 800;
+  letter-spacing: -6px;
+
+  background: linear-gradient(135deg, #fff, #cbb2ff 45%, #8c4dff);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  text-shadow:
+    0 0 15px rgba(165, 100, 255, 0.8),
+    0 0 35px rgba(130, 60, 255, 0.45);
+}
+
+/* Glow */
+
+.animated-profile .profile-glow {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(136, 75, 255, 0.4),
+    rgba(115, 50, 255, 0.15) 40%,
+    transparent 70%
+  );
+
+  filter: blur(15px);
+  z-index: 1;
+
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+/* Orbit rings */
+
+.animated-profile .profile-orbit {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.animated-profile .orbit-1 {
+  width: 245px;
+  height: 245px;
+
+  border: 2px solid rgba(151, 85, 255, 0.75);
+
+  box-shadow: 0 0 12px rgba(139, 75, 255, 0.8);
+
+  animation: rotateOrbit 8s linear infinite;
+}
+
+.animated-profile .orbit-2 {
+  width: 280px;
+  height: 120px;
+
+  border: 1px solid rgba(210, 175, 255, 0.7);
+
+  transform: rotate(-25deg);
+
+  animation: rotateOrbitReverse 10s linear infinite;
+}
+
+.animated-profile .orbit-3 {
+  width: 300px;
+  height: 300px;
+
+  border: 1px dashed rgba(120, 75, 255, 0.35);
+
+  animation: rotateOrbit 18s linear infinite;
+}
+
+/* Particles */
+
+.animated-profile .profile-particle {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+
+  background: #b982ff;
+
+  box-shadow:
+    0 0 8px #a75cff,
+    0 0 20px rgba(154, 85, 255, 0.8);
+
+  z-index: 8;
+}
+
+.animated-profile .particle-1 {
+  top: 25px;
+  right: 45px;
+  animation: particlePulse 2s ease-in-out infinite;
+}
+
+.animated-profile .particle-2 {
+  bottom: 45px;
+  left: 35px;
+  animation: particlePulse 2.5s ease-in-out infinite;
+}
+
+.animated-profile .particle-3 {
+  top: 90px;
+  left: 15px;
+  animation: particlePulse 3s ease-in-out infinite;
+}
+
+/* Animations */
+
+@keyframes profileFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes glowPulse {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(0.95);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes rotateOrbit {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateOrbitReverse {
+  from {
+    transform: rotate(-25deg);
+  }
+
+  to {
+    transform: rotate(335deg);
+  }
+}
+
+@keyframes particlePulse {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.7);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .animated-profile .profile-core {
+    width: 150px;
+    height: 150px;
+  }
+
+  .animated-profile .profile-core span {
+    font-size: 55px;
+  }
+
+  .animated-profile .orbit-1 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .animated-profile .orbit-2 {
+    width: 230px;
+    height: 100px;
+  }
+
+  .animated-profile .orbit-3 {
+    width: 250px;
+    height: 250px;
+  }
+
+  .animated-profile .profile-glow {
+    width: 180px;
+    height: 180px;
+  }
+}
