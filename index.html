@@ -1,0 +1,849 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#07070c" />
+    <meta
+      name="description"
+      content="Anurag Das — Computer Science & Engineering undergraduate focused on AI, Machine Learning, Computer Vision and Full-Stack Development."
+    />
+    <title>Anurag Das — AI × Software × Vision</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%237c3aed'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Arial' font-size='24' font-weight='700' fill='white'%3EAD%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="loader" class="loader">
+      <div class="loader-orb"><span>AD</span></div>
+      <div class="loader-text">INITIALIZING <b>ANURAG.DAS</b><i></i></div>
+    </div>
+    <div class="noise"></div>
+    <div class="grid-bg"></div>
+    <div id="spotlight"></div>
+    <div id="cursor" class="cursor"><span></span></div>
+    <div id="scrollProgress"></div>
+
+    <header class="nav" id="nav">
+      <a href="#home" class="brand"
+        ><span class="brand-mark">AD</span
+        ><span>ANURAG<span class="accent">.DEV</span></span></a
+      >
+      <nav>
+        <a href="#about">About</a><a href="#projects">Projects</a
+        ><a href="#skills">Stack</a><a href="#journey">Journey</a
+        ><a href="#proof">Proof</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme" class="icon-btn" aria-label="Toggle theme">◐</button
+        ><button id="cmdBtn" class="cmd-key">⌘ K</button
+        ><a href="#contact" class="nav-talk">Let's talk <span>↗</span></a
+        ><button id="menu" class="menu-btn">☰</button>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero section" id="hero">
+        <canvas id="matrix"></canvas>
+        <div class="aurora a1"></div>
+        <div class="aurora a2"></div>
+        <div class="hero-left reveal">
+          <div class="eyebrow">
+            <span class="live-dot"></span> OPEN TO OPPORTUNITIES <b>2026</b>
+          </div>
+          <div class="micro">COMPUTER SCIENCE & ENGINEERING · MAKAUT</div>
+          <h1>
+            Building systems<br />that <em>think</em>.<br /><strong
+              >Ship. Scale.</strong
+            >
+          </h1>
+          <p class="hero-lead">
+            I'm <b>Anurag Das</b> — a B.Tech CSE undergraduate building at the
+            intersection of
+            <strong
+              >AI/ML, computer vision, full-stack engineering and practical
+              product design.</strong
+            >
+          </p>
+          <div class="hero-buttons">
+            <a class="btn primary magnetic" href="#projects"
+              >Explore my work <span>↓</span></a
+            ><a class="btn ghost magnetic" href="Anurag_Das_CV.pdf" download
+              >Download CV <span>↗</span></a
+            >
+          </div>
+          <div class="stats">
+            <div><b data-count="8.09">8.09</b><small>CGPA / 10</small></div>
+            <i></i>
+            <div><b data-count="8">08</b><small>PROJECTS</small></div>
+            <i></i>
+            <div><b>01</b><small>RESEARCH PAPER</small></div>
+            <i></i>
+            <div><b>3×</b><small>SIH PARTICIPANT</small></div>
+          </div>
+        </div>
+        <div class="hero-right reveal">
+          <div class="halo h1"></div>
+          <div class="halo h2"></div>
+          <div class="halo h3"></div>
+          <div class="identity-card tilt" data-tilt>
+            <div class="card-line">
+              <span>IDENTITY / 01</span><span>ANURAG DAS</span>
+            </div>
+            <div class="photo-wrap">
+              <img src="assets/profile.jpg" alt="Anurag Das" />
+              <div class="photo-shine"></div>
+              <span class="initial-badge">AD</span>
+            </div>
+            <div class="card-line bottom">
+              <span><small>FOCUS</small><b>AI × SOFTWARE</b></span
+              ><span><small>BASE</small><b>INDIA</b></span>
+            </div>
+          </div>
+          <div class="orbit-chip c1">✦ AI / ML</div>
+          <div class="orbit-chip c2">◎ COMPUTER VISION</div>
+          <div class="orbit-chip c3">⌁ FULL STACK</div>
+          <div class="code-float">
+            <span>01</span
+            ><code
+              >const <b>builder</b> = "Anurag";<br />builder.<em>ship</em>(impact);</code
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="marquee">
+        <div class="marquee-track">
+          <span>ARTIFICIAL INTELLIGENCE</span><b>✦</b
+          ><span>MACHINE LEARNING</span><b>✦</b><span>COMPUTER VISION</span
+          ><b>✦</b><span>FULL-STACK DEVELOPMENT</span><b>✦</b
+          ><span>SOFTWARE ENGINEERING</span><b>✦</b
+          ><span>ARTIFICIAL INTELLIGENCE</span><b>✦</b
+          ><span>COMPUTER VISION</span>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="section-label reveal"><span>01</span><b>PROFILE</b></div>
+        <div class="section-main">
+          <div class="section-head reveal">
+            <div>
+              <div class="micro">THE PERSON BEHIND THE BUILDS</div>
+              <h2>
+                Curious by default.<br /><em>Relentless</em> about learning.
+              </h2>
+            </div>
+            <div class="head-badge">B.TECH CSE<br /><b>2023 — 2027</b></div>
+          </div>
+          <div class="about-grid">
+            <div class="about-copy reveal">
+              <p>
+                I'm a motivated
+                <strong>B.Tech Computer Science & Engineering</strong> student
+                at Techno Institute of Engineering and Management, under MAKAUT,
+                with hands-on experience in web development, AI-powered
+                applications and computer vision.
+              </p>
+              <p>
+                I enjoy taking an idea from a problem statement to a working
+                interface, model, API or end-to-end prototype — then iterating
+                until it feels useful, not just technically correct.
+              </p>
+              <p class="muted">
+                I'm open to internships, entry-level roles, collaborations and
+                technically ambitious projects.
+              </p>
+              <div class="mini-pills">
+                <span>Problem Solving</span><span>Adaptability</span
+                ><span>Quick Learner</span><span>Team Player</span
+                ><span>Communication</span><span>Time Management</span>
+              </div>
+            </div>
+            <div class="facts reveal">
+              <article>
+                <span>01</span>
+                <div>
+                  <small>EDUCATION</small
+                  ><b>Techno Institute of Engineering and Management</b
+                  ><em>MAKAUT · B.Tech CSE · Expected 2027</em>
+                </div>
+              </article>
+              <article>
+                <span>02</span>
+                <div>
+                  <small>ACADEMICS</small><b>8.09 / 10 CGPA</b
+                  ><em>Current undergraduate performance</em>
+                </div>
+              </article>
+              <article>
+                <span>03</span>
+                <div>
+                  <small>SCHOOLING</small><b>92% · Class X</b
+                  ><em>St. Jude's High School · ICSE · 2021</em>
+                </div>
+              </article>
+              <article>
+                <span>04</span>
+                <div>
+                  <small>HIGHER SECONDARY</small><b>66.6% · Class XII</b
+                  ><em>Sudhir Memorial Institute · CBSE · 2023</em>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects">
+        <div class="section-label reveal">
+          <span>02</span><b>PROJECT ARCHIVE</b>
+        </div>
+        <div class="section-main">
+          <div class="section-head reveal">
+            <div>
+              <div class="micro">08 BUILDS · 2025 — 2026</div>
+              <h2>Projects with a<br /><em>reason to exist.</em></h2>
+            </div>
+            <p class="head-note">
+              Hover to wake the interface. Click any project for its case-study
+              panel.
+            </p>
+          </div>
+          <div class="filters reveal">
+            <button class="filter active" data-filter="all">
+              All <b>08</b></button
+            ><button class="filter" data-filter="ai">AI / ML <b>04</b></button
+            ><button class="filter" data-filter="web">Web <b>04</b></button
+            ><button class="filter" data-filter="vision">
+              Vision <b>02</b></button
+            ><button class="filter" data-filter="2026">2026 <b>04</b></button
+            ><button class="filter" data-filter="2025">2025 <b>04</b></button>
+          </div>
+          <div class="project-grid" id="projectGrid">
+            <article
+              class="project-card wide reveal tilt"
+              data-tags="ai vision 2026"
+              data-id="0"
+            >
+              <div class="project-art legal">
+                <span class="art-label">OCR / RULE ENGINE</span>
+                <div class="scanner"></div>
+                <div class="document">
+                  <b>₹ 1,000 kg</b><small>PACKAGED COMMODITY</small>
+                </div>
+                <div class="check-list">
+                  <i>✓ Detect</i><i>✓ Extract</i><i>✓ Verify</i><i>✓ Report</i>
+                </div>
+                <em>01 / 08</em>
+              </div>
+              <div class="project-info">
+                <div class="project-meta">
+                  <span>2026 · SIH</span><b>AI + OCR</b>
+                </div>
+                <h3>SIH Legal Metrology Compliance System</h3>
+                <p>
+                  Smart India Hackathon solution that scans product images and
+                  labels, extracts data using OCR and validates
+                  packaged-commodity information against Legal Metrology rules.
+                </p>
+                <div class="tags">
+                  <i>Node.js</i><i>Express.js</i><i>PostgreSQL</i><i>Prisma</i
+                  ><i>Tesseract.js/OCR</i>
+                </div>
+                <button class="open-case">Explore case study ↗</button>
+              </div>
+            </article>
+            <article
+              class="project-card reveal tilt"
+              data-tags="ai 2026"
+              data-id="1"
+            >
+              <div class="project-art cyber">
+                <span class="art-label">PE / ML</span>
+                <div class="shield">⌁</div>
+                <div class="binary">
+                  010101 110010<br />101100 001101<br />011011 101010
+                </div>
+                <em>02 / 08</em>
+              </div>
+              <div class="project-info">
+                <div class="project-meta"><span>2026</span><b>CYBER AI</b></div>
+                <h3>FileGuard</h3>
+                <p>
+                  ML-based malware detection and file analysis using static PE
+                  features, EMBER features and an interactive Streamlit
+                  dashboard for real-time analysis.
+                </p>
+                <div class="tags">
+                  <i>Python</i><i>LightGBM</i><i>FastAPI</i><i>Streamlit</i
+                  ><i>LIEF</i><i>pefile</i>
+                </div>
+                <button class="open-case">Explore case study ↗</button>
+              </div>
+            </article>
+            <article
+              class="project-card reveal tilt"
+              data-tags="ai web 2026"
+              data-id="2"
+            >
+              <div class="project-art risk">
+                <span class="art-label">RISK ENGINE</span>
+                <div class="risk-grid"><i></i><i></i><i></i></div>
+                <div class="risk-wave"></div>
+                <em>03 / 08</em>
+              </div>
+              <div class="project-info">
+                <div class="project-meta">
+                  <span>2026</span><b>HEALTH AI</b>
+                </div>
+                <h3>FitGuard — Fitness & Calorie Tracker</h3>
+                <p>
+                  Fitness and health tracking platform calculating calories
+                  burned, tracking workouts and providing health-metric
+                  insights, diet and progress visualization.
+                </p>
+                <div class="tags">
+                  <i>Python</i><i>NumPy</i><i>Pandas</i><i>Scikit-learn</i
+                  ><i>XGBoost</i><i>FastAPI</i><i>React</i>
+                </div>
+                <button class="open-case">Explore case study ↗</button>
+              </div>
+            </article>
+            <article
+              class="project-card reveal tilt"
+              data-tags="ai 2026"
+              data-id="3"
+            >
+              <div class="project-art nlp">
+                <span class="art-label">ATS / NLP</span>
+                <div class="resume">
+                  <b>Resume.pdf</b><i></i><i></i><i></i><i></i>
+                </div>
+                <div class="match">SKILLS MATCHED <strong>92%</strong></div>
+                <em>04 / 08</em>
+              </div>
+              <div class="project-info">
+                <div class="project-meta"><span>2026</span><b>NLP</b></div>
+                <h3>Resume Checker — AI Powered Screening</h3>
+                <p>
+                  Analyzes resumes, extracts PDF/DOCX text, evaluates skills,
+                  experience and education using NLP/ML techniques and produces
+                  an ATS score with improvement suggestions.
+                </p>
+                <div class="tags">
+                  <i>Python</i><i>spaCy</i><i>NLTK</i><i>Scikit-learn</i
+                  ><i>Flask</i><i>PyMuPDF</i>
+                </div>
+                <button class="open-case">Explore case study ↗</button>
+              </div>
+            </article>
+            <article
+              class="project-card reveal tilt"
+              data-tags="ai web 2025"
+              data-id="4"
+            >
+              <div class="project-art kitchen">
+                <span class="art-label">AI KITCHEN</span>
+                <div class="chef">⌁</div>
+                <div class="ingredient">🥕</div>
+                <div class="ingredient i2">🍅</div>
+                <div class="ingredient i3">🍄</div>
+                <em>05 / 08</em>
+              </div>
+              <div class="project-info">
+                <div class="project-meta"><span>2025</span><b>GENAI</b></div>
+                <h3>Recipe Remixer — AI Recipe Generator</h3>
+                <p>
+                  Personalized recipes from ingredients and preferences with
+                  recipe history, substitutions, portion scaling and
+                  multilingual support.
+                </p>
+                <div class="tags">
+                  <i>React</i><i>TypeScript</i><i>Vite</i><i>Claude API</i>
+                </div>
+                <button class="open-case">Explore case study ↗</button>
+              </div>
+            </article>
+            <article
+              class="project-card reveal tilt"
+              data-tags="web 2025"
+              data-id="5"
+            >
+              <div class="project-art shop">
+                <span class="art-label">STORE / UI</span>
+                <div class="product-stack"><i></i><i></i><i></i></div>
+                <div class="cart">🛒</div>
+                <em>06 / 08</em>
+              </div>
+              <div class="project-info">
+                <div class="project-meta">
+                  <span>2025</span><b>E-COMMERCE</b>
+                </div>
+                <h3>ABC General Store — E-Commerce Web App</h3>
+                <p>
+                  Responsive online store experience with product browsing,
+                  cart, search, order management and a clean customer-facing
+                  interface.
+                </p>
+                <div class="tags"><i>React</i><i>TypeScript</i><i>Vite</i></div>
+                <button class="open-case">Explore case study ↗</button>
+              </div>
+            </article>
+            <article
+              class="project-card reveal tilt"
+              data-tags="web 2025"
+              data-id="6"
+            >
+              <div class="project-art erp">
+                <span class="art-label">ERP / OPS</span>
+                <div class="erp-flow">
+                  <i>PLAN</i><i>DEPLOY</i><i>MONITOR</i><i>SCALE</i>
+                </div>
+                <em>07 / 08</em>
+              </div>
+              <div class="project-info">
+                <div class="project-meta">
+                  <span>2025</span><b>ENTERPRISE</b>
+                </div>
+                <h3>ERP Software System — Academic Project</h3>
+                <p>
+                  ERP system for inventory, sales, purchase and employees with
+                  role-based authentication, dashboards, reporting and
+                  responsive UI.
+                </p>
+                <div class="tags">
+                  <i>React.js</i><i>JavaScript</i><i>MySQL</i>
+                </div>
+                <button class="open-case">Explore case study ↗</button>
+              </div>
+            </article>
+            <article
+              class="project-card wide reveal tilt"
+              data-tags="vision web 2025"
+              data-id="7"
+            >
+              <div class="project-art yolo">
+                <span class="art-label">YOLOv8 / REAL-TIME CV</span>
+                <div class="road">
+                  <span class="box car">CAR <b>0.92</b></span
+                  ><span class="box person">PERSON <b>0.87</b></span
+                  ><span class="box bike">BIKE <b>0.78</b></span>
+                </div>
+                <em>08 / 08</em>
+              </div>
+              <div class="project-info">
+                <div class="project-meta">
+                  <span>2025</span><b>COMPUTER VISION</b>
+                </div>
+                <h3>
+                  RoadGuard — Automated Road Damage Detection & Assessment
+                </h3>
+                <p>
+                  Computer-vision system detecting potholes, cracks and manholes
+                  using YOLOv8 on a custom dataset, with a Flask web interface
+                  for detection and visualization.
+                </p>
+                <div class="tags">
+                  <i>Python</i><i>YOLOv8</i><i>PyTorch</i><i>Ultralytics</i
+                  ><i>Flask</i><i>HTML/CSS</i>
+                </div>
+                <button class="open-case">Explore case study ↗</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills">
+        <div class="section-label reveal"><span>03</span><b>TECH STACK</b></div>
+        <div class="section-main">
+          <div class="section-head reveal">
+            <div>
+              <div class="micro">TOOLS I LIKE TO BUILD WITH</div>
+              <h2>A stack that moves<br /><em>from model to product.</em></h2>
+            </div>
+          </div>
+          <div class="skills-layout reveal">
+            <div class="skill-cloud" id="skillCloud"></div>
+            <div class="skill-panel">
+              <div class="panel-top">
+                <span id="skillCategory">LANGUAGES</span
+                ><b id="skillCount">05</b>
+              </div>
+              <div class="skill-meter"><i id="skillMeter"></i></div>
+              <div class="skill-list" id="skillList"></div>
+              <div class="orbit-stack">
+                <span>AI</span><span>API</span><span>UI</span><span>DB</span
+                ><span>CV</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="journey">
+        <div class="section-label reveal"><span>04</span><b>JOURNEY</b></div>
+        <div class="section-main">
+          <div class="section-head reveal">
+            <div>
+              <div class="micro">EXPERIENCE · LEARNING · BUILDING</div>
+              <h2>From classroom<br />to <em>real systems.</em></h2>
+            </div>
+          </div>
+          <div class="timeline reveal">
+            <article>
+              <div class="time">2025</div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <span>INTERNSHIP</span>
+                <h3>Web Developer Intern · The Skybrisk</h3>
+                <p>
+                  Remote internship opportunity and completed Web Developer
+                  Internship program, Batch November 20, 2025.
+                </p>
+                <div class="timeline-tags">
+                  <i>Web Development</i><i>Remote</i><i>1 Month</i>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="time">2025 — 2026</div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <span>PROJECT BUILDING</span>
+                <h3>AI, Computer Vision & Full-Stack Systems</h3>
+                <p>
+                  Built and iterated on projects spanning YOLOv8 road-damage
+                  detection, malware analysis, health tracking, NLP resume
+                  screening, GenAI and enterprise web applications.
+                </p>
+                <div class="timeline-tags">
+                  <i>AI/ML</i><i>Vision</i><i>Web</i>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="time">2026</div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-card highlight">
+                <span>SMART INDIA HACKATHON</span>
+                <h3>3× Participant · 2nd Place at College Level in SIH 2026</h3>
+                <p>
+                  Continued participating in Smart India Hackathon with a focus
+                  on turning problem statements into practical, demonstrable
+                  systems.
+                </p>
+                <div class="timeline-tags">
+                  <i>SIH</i><i>Teamwork</i><i>Problem Solving</i>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="time">2026</div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <span>RESEARCH</span>
+                <h3>Research Paper Published</h3>
+                <p>
+                  Published a peer-reviewed research paper as part of the
+                  academic and technical journey.
+                </p>
+                <div class="timeline-tags">
+                  <i>Research</i><i>Publication</i>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof-section" id="proof">
+        <div class="section-label reveal">
+          <span>05</span><b>PROOF OF WORK</b>
+        </div>
+        <div class="section-main">
+          <div class="section-head reveal">
+            <div>
+              <div class="micro">CERTIFICATIONS & CREDENTIALS</div>
+              <h2>Learning is part of<br />the <em>build loop.</em></h2>
+            </div>
+            <p class="head-note">
+              Credentials collected across machine learning, Python, GenAI and
+              professional development.
+            </p>
+          </div>
+          <div class="cert-grid reveal">
+            <button
+              class="cert-card"
+              data-cert="Algorithm Alchemy: Unlocking the Secrets of Machine Learning"
+              data-source="Udemy"
+            >
+              <span class="cert-no">01</span><span class="cert-logo">U</span
+              ><small>UDEMY · OCT 2025</small>
+              <h3>Algorithm Alchemy</h3>
+              <p>Unlocking the Secrets of Machine Learning</p>
+              <b>VIEW CREDENTIAL ↗</b>
+            </button>
+            <button
+              class="cert-card"
+              data-cert="Crash Course on Python"
+              data-source="Coursera / Google"
+            >
+              <span class="cert-no">02</span><span class="cert-logo">G</span
+              ><small>COURSERA · GOOGLE</small>
+              <h3>Crash Course on Python</h3>
+              <p>Completion Certificate</p>
+              <b>VIEW CREDENTIAL ↗</b>
+            </button>
+            <button
+              class="cert-card"
+              data-cert="Finding Your Professional Voice: Confidence & Impact"
+              data-source="Coursera / University of London"
+            >
+              <span class="cert-no">03</span><span class="cert-logo">U</span
+              ><small>COURSERA · UNIVERSITY OF LONDON</small>
+              <h3>Professional Voice</h3>
+              <p>Confidence & Impact</p>
+              <b>VIEW CREDENTIAL ↗</b>
+            </button>
+            <button
+              class="cert-card"
+              data-cert="Develop GenAI Apps with Gemini and Streamlit Skill Badge"
+              data-source="Google Cloud"
+            >
+              <span class="cert-no">04</span><span class="cert-logo">G</span
+              ><small>GOOGLE CLOUD · CREDLY</small>
+              <h3>GenAI Apps</h3>
+              <p>Gemini + Streamlit Skill Badge</p>
+              <b>VIEW CREDENTIAL ↗</b>
+            </button>
+            <button
+              class="cert-card"
+              data-cert="A Life of Happiness and Fulfillment"
+              data-source="Coursera / ISB"
+            >
+              <span class="cert-no">05</span><span class="cert-logo">ISB</span
+              ><small>COURSERA · ISB</small>
+              <h3>A Life of Happiness</h3>
+              <p>and Fulfillment</p>
+              <b>VIEW CREDENTIAL ↗</b>
+            </button>
+            <button
+              class="cert-card internship-cert"
+              data-cert="Web Developer Internship — The Skybrisk"
+              data-source="The Skybrisk"
+            >
+              <span class="cert-no">06</span><span class="cert-logo">TS</span
+              ><small>THE SKYBRISK · 2025</small>
+              <h3>Web Developer Intern</h3>
+              <p>Completed internship · Batch Nov 20–Dec 20, 2025</p>
+              <b>VIEW CREDENTIAL ↗</b>
+            </button>
+            <div class="credential-summary">
+              <span>06</span>
+              <div>
+                <b>verified learning records</b
+                ><small
+                  >Plus internship credentials and an evolving research
+                  profile.</small
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="section-label reveal"><span>06</span><b>CONTACT</b></div>
+        <div class="section-main">
+          <div class="contact-hero reveal">
+            <div>
+              <div class="micro">LET'S CONNECT</div>
+              <h2>Let's build<br />something <em>great.</em></h2>
+              <p>
+                I'm open to internships, entry-level roles, collaborations and
+                technically ambitious projects. Have an idea or opportunity?
+                Let's turn it into something real.
+              </p>
+              <div class="contact-pills">
+                <button><span>◈</span> Internships</button
+                ><button><span>⌘</span> Collaboration</button
+                ><button><span>✦</span> Opportunities</button
+                ><button><span>◌</span> Just say hi</button>
+              </div>
+            </div>
+            <div class="globe-wrap">
+              <div class="globe">
+                <div class="globe-lines"></div>
+                <span class="pin pA">✦</span><span class="pin pB">⌁</span
+                ><span class="pin pC">◈</span>
+              </div>
+              <div class="globe-note nA">
+                OPEN TO<br /><b>NEW OPPORTUNITIES</b>
+              </div>
+              <div class="globe-note nB">
+                TURNING IDEAS<br /><b>INTO REALITY</b>
+              </div>
+              <div class="globe-note nC">LET'S<br /><b>COLLABORATE</b></div>
+            </div>
+          </div>
+          <div class="contact-grid reveal">
+            <form id="contactForm" class="contact-form">
+              <div class="form-head">
+                <span>✉</span>
+                <div>
+                  <b>Send me a message</b
+                  ><small
+                    >Fill out the form and your email client will open with the
+                    message ready.</small
+                  >
+                </div>
+              </div>
+              <div class="form-row">
+                <label
+                  ><span>YOUR NAME</span
+                  ><input id="name" required placeholder="Your name" /></label
+                ><label
+                  ><span>YOUR EMAIL</span
+                  ><input
+                    id="email"
+                    type="email"
+                    required
+                    placeholder="you@example.com"
+                /></label>
+              </div>
+              <div class="form-row">
+                <label
+                  ><span>SUBJECT</span
+                  ><input
+                    id="subject"
+                    placeholder="Internship / Collaboration / Hello" /></label
+                ><label
+                  ><span>INTEREST</span
+                  ><select id="interest">
+                    <option>Internship</option>
+                    <option>Entry-level role</option>
+                    <option>Collaboration</option>
+                    <option>Project / Research</option>
+                    <option>Just saying hi</option>
+                  </select></label
+                >
+              </div>
+              <label class="message"
+                ><span>YOUR MESSAGE</span
+                ><textarea
+                  id="message"
+                  maxlength="500"
+                  placeholder="Tell me what you're working on..."
+                ></textarea
+                ><small id="counter">0 / 500</small></label
+              ><button class="send-btn" type="submit">
+                Send message <span>↗</span>
+              </button>
+            </form>
+            <div class="contact-cards">
+              <article class="contact-card email">
+                <span class="contact-icon">✉</span>
+                <div>
+                  <small>EMAIL</small><b>tecb.cse27.anurag@gmail.com</b
+                  ><em>Drop me an email anytime.</em>
+                </div>
+                <button data-copy="tecb.cse27.anurag@gmail.com">Copy</button>
+              </article>
+              <article class="contact-card phone">
+                <span class="contact-icon">☎</span>
+                <div>
+                  <small>PHONE</small><b>+91 9163731199</b
+                  ><em>Feel free to call.</em>
+                </div>
+                <a href="tel:+919163731199">Call</a>
+              </article>
+              <article class="contact-card linkedin">
+                <span class="contact-icon">in</span>
+                <div>
+                  <small>LINKEDIN</small><b>/in/anurag-das-95071a293</b
+                  ><em>Let's connect professionally.</em>
+                </div>
+                <a
+                  href="https://www.linkedin.com/in/anurag-das-95071a293"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Visit ↗</a
+                >
+              </article>
+              <article class="contact-card github">
+                <span class="contact-icon">⌘</span>
+                <div>
+                  <small>GITHUB</small><b>@me-anuragg</b
+                  ><em>Explore the code behind the builds.</em>
+                </div>
+                <a
+                  href="https://github.com/me-anuragg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Visit ↗</a
+                >
+              </article>
+            </div>
+          </div>
+          <div class="contact-footer reveal">
+            <span>◷ <b>Typically replies within 24 hours</b></span
+            ><span>⌖ <b>Kolkata, India</b></span
+            ><span>➤ <b>Open to remote opportunities</b></span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span
+        >ANURAG DAS <i>© <span id="year"></span></i></span
+      ><span>AI × SOFTWARE × VISION</span><a href="#home">BACK TO TOP ↑</a>
+    </footer>
+
+    <div class="modal" id="projectModal" aria-hidden="true">
+      <div class="modal-backdrop"></div>
+      <div class="modal-card">
+        <button class="modal-close" data-close>×</button>
+        <div id="projectModalContent"></div>
+      </div>
+    </div>
+    <div class="modal" id="certModal" aria-hidden="true">
+      <div class="modal-backdrop"></div>
+      <div class="modal-card small">
+        <button class="modal-close" data-close>×</button>
+        <div id="certModalContent"></div>
+      </div>
+    </div>
+    <div class="command" id="command">
+      <div class="command-backdrop"></div>
+      <div class="command-box">
+        <div class="command-search">
+          <span>⌕</span
+          ><input id="commandInput" placeholder="Jump to a section…" /><kbd
+            >ESC</kbd
+          >
+        </div>
+        <div class="command-list">
+          <button data-go="#about">About <span>01</span></button
+          ><button data-go="#projects">Projects <span>02</span></button
+          ><button data-go="#skills">Stack <span>03</span></button
+          ><button data-go="#journey">Journey <span>04</span></button
+          ><button data-go="#proof">Proof <span>05</span></button
+          ><button data-go="#contact">Contact <span>06</span></button
+          ><button data-cv>Download CV <span>↗</span></button>
+        </div>
+      </div>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
